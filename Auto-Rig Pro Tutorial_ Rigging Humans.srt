@@ -1,0 +1,3892 @@
+1
+00:00:00,410 --> 00:00:05,920
+Hey, welcome to the first actual tutorial in this series about using AutoRig Pro.
+
+2
+00:00:06,200 --> 00:00:11,080
+If you don't yet have AutoRig Pro, you may want to check out the first two videos.
+
+3
+00:00:11,380 --> 00:00:17,240
+They are meant to help you decide if AutoRig Pro is right for you, if you should buy it.
+
+4
+00:00:17,440 --> 00:00:22,480
+If you're here, then I assume that you already have the add-on, or maybe you want to get
+
+5
+00:00:22,480 --> 00:00:24,060
+a feel for how it works.
+
+6
+00:00:24,400 --> 00:00:26,760
+In this video we'll be rigging humans.
+
+7
+00:00:26,760 --> 00:00:33,900
+This is one of the most common rigging tasks, and AutoRig Pro has amazing tools and automations,
+
+8
+00:00:34,160 --> 00:00:37,940
+but I want to emphasize that AutoRig Pro can do much more than that.
+
+9
+00:00:38,120 --> 00:00:44,700
+You could rig animals with it, like dogs, horses, even birds, and you can even rig fantasy creatures
+
+10
+00:00:44,700 --> 00:00:46,940
+that don't really exist in the real world.
+
+11
+00:00:47,100 --> 00:00:53,060
+I think most tutorials stop at the human rig, but in this series I want to try to cover all
+
+12
+00:00:53,060 --> 00:00:56,160
+sorts of scenarios that AutoRig Pro can handle.
+
+13
+00:00:56,160 --> 00:01:00,440
+So, if you want to see this, make sure to subscribe with notifications and so on.
+
+14
+00:01:00,660 --> 00:01:05,280
+Also feel free to let me know what kind of content you would like to see in the comments, and
+
+15
+00:01:05,280 --> 00:01:06,780
+I may include it in the course.
+
+16
+00:01:07,520 --> 00:01:09,380
+Okay, so next you need AutoRig Pro.
+
+17
+00:01:09,600 --> 00:01:13,680
+If you haven't bought it already, you can go to the add-ons page on the Blender Market
+
+18
+00:01:13,680 --> 00:01:15,180
+and purchase it.
+
+19
+00:01:15,420 --> 00:01:16,840
+I'm going to give you a link.
+
+20
+00:01:17,000 --> 00:01:20,840
+It's going to be an affiliate link, which means that I'll make a little profit if you buy
+
+21
+00:01:20,840 --> 00:01:21,280
+through it.
+
+22
+00:01:21,920 --> 00:01:26,800
+Once you've bought the add-on, you'll be able to view your order, and in here you'll
+
+23
+00:01:26,800 --> 00:01:28,600
+be able to download AutoRig Pro.
+
+24
+00:01:29,200 --> 00:01:32,840
+And below it, you'll see a README on how to install the add-ons.
+
+25
+00:01:33,140 --> 00:01:37,980
+So download these files, and you can go ahead and read the text file, or you can keep watching
+
+26
+00:01:37,980 --> 00:01:38,340
+the video.
+
+27
+00:01:38,340 --> 00:01:40,180
+I'm going to show you how to install the add-on.
+
+28
+00:01:40,920 --> 00:01:47,020
+So usually, when you download an add-on as a zip file, you can just go to Edit, Preferences,
+
+29
+00:01:47,360 --> 00:01:52,120
+Add-ons, click Install, and go ahead and install the zip file that you downloaded.
+
+30
+00:01:52,380 --> 00:01:55,140
+In the case of AutoRig Pro, it is a little bit different.
+
+31
+00:01:55,380 --> 00:01:57,860
+Here I'm going to open up the zip file.
+
+32
+00:01:58,140 --> 00:02:04,140
+Here is the contents, and you'll see that it contains a .py file, and two more zip files,
+
+33
+00:02:04,140 --> 00:02:06,040
+and a 2.79 folder.
+
+34
+00:02:06,340 --> 00:02:10,300
+You have to unzip these files somewhere on your hard drive.
+
+35
+00:02:10,480 --> 00:02:16,020
+So personally, I have a special folder where I place the newest version of AutoRig Pro.
+
+36
+00:02:16,220 --> 00:02:22,140
+So here I'm going to delete the previous version that I had, and just select all of these files
+
+37
+00:02:22,140 --> 00:02:24,060
+and place them in this folder.
+
+38
+00:02:25,440 --> 00:02:31,960
+If you're using the ancient Blender 2.79, then go into this folder, and you can use these
+
+39
+00:02:31,960 --> 00:02:34,600
+special files for the older Blender version.
+
+40
+00:02:34,920 --> 00:02:37,600
+I've never done that, and I'm not going to cover this.
+
+41
+00:02:38,320 --> 00:02:45,180
+Personally I'll be using the newest version of Blender, Blender 3.2, and the newest version
+
+42
+00:02:45,180 --> 00:02:45,980
+of AutoRig Pro.
+
+43
+00:02:46,200 --> 00:02:52,080
+So the actual AutoRig Pro add-on is this one, AutoRig Pro Master.zip.
+
+44
+00:02:52,080 --> 00:02:58,900
+The Proxy Picker is an additional tool that I'll cover in a separate video, and RigTools.zip
+
+45
+00:02:58,900 --> 00:03:05,740
+is a mini add-on that you can send to someone else when you're sharing your AutoRig Pro rig
+
+46
+00:03:05,740 --> 00:03:06,380
+with them.
+
+47
+00:03:06,660 --> 00:03:12,140
+To make full use of the rig, they need this mini add-on, and it's very important that
+
+48
+00:03:12,140 --> 00:03:14,160
+you do not install both add-ons.
+
+49
+00:03:14,480 --> 00:03:19,100
+So in this case, we are only going to install AutoRig Pro Master, okay?
+
+50
+00:03:19,100 --> 00:03:26,200
+I'll go back to Blender, Edit, Preferences, Add-ons, click on Install, and I'll go to my
+
+51
+00:03:26,200 --> 00:03:31,700
+folder where I keep AutoRig Pro, and highlight AutoRig Pro Master and install it.
+
+52
+00:03:32,120 --> 00:03:35,300
+And then I'll put a check mark next to the add-on's name.
+
+53
+00:03:35,720 --> 00:03:39,700
+There are some add-ons options that I'm going to cover in another video.
+
+54
+00:03:39,980 --> 00:03:46,000
+In this video, I just want to keep it simple and focus on some of the most useful and commonly
+
+55
+00:03:46,000 --> 00:03:46,760
+used features.
+
+56
+00:03:47,480 --> 00:03:51,760
+So in this video, I'm going to show you two examples of rigging a humanoid character.
+
+57
+00:03:52,020 --> 00:03:56,080
+One will be very simple, and the other one will be more complex.
+
+58
+00:03:56,360 --> 00:04:02,060
+It is only because AutoRig Pro has really cool features that I can use such a complex character
+
+59
+00:04:02,060 --> 00:04:03,820
+in a beginner's tutorial.
+
+60
+00:04:04,060 --> 00:04:08,740
+And if you want to follow along with me with the exact models that I'm using, I'm going
+
+61
+00:04:08,740 --> 00:04:10,980
+to share these models for free on Gumroad.
+
+62
+00:04:10,980 --> 00:04:15,920
+And most likely, you'll be able to pay a little extra and get some bonuses, but you'll be able
+
+63
+00:04:15,920 --> 00:04:18,300
+to get the main files for free.
+
+64
+00:04:18,500 --> 00:04:21,620
+I'll share a link to the Gumroad page in the video notes.
+
+65
+00:04:22,100 --> 00:04:29,060
+Okay, so I'll open my first file, and it should be called something like ARP Rigging Simple.
+
+66
+00:04:29,400 --> 00:04:31,940
+And when you open it, you should see this file here.
+
+67
+00:04:32,120 --> 00:04:34,900
+You may recognize this guy from my Rigify series.
+
+68
+00:04:34,900 --> 00:04:38,520
+And up here, you'll see a little info about the license.
+
+69
+00:04:38,740 --> 00:04:40,440
+Basically, this is my file.
+
+70
+00:04:40,940 --> 00:04:45,140
+I'm releasing it as Creative Commons, so you can use it for whatever you like.
+
+71
+00:04:45,620 --> 00:04:49,060
+Just try to credit CGDive, and thank you if you do.
+
+72
+00:04:49,620 --> 00:04:52,940
+And then I'm going to close this and focus on my character.
+
+73
+00:04:53,620 --> 00:04:55,740
+So I just installed AutoRig Pro.
+
+74
+00:04:55,740 --> 00:05:01,900
+So if I open the end panel here, I'll have the ARP ARP tab.
+
+75
+00:05:02,140 --> 00:05:04,760
+And here is the main AutoRig Pro interface.
+
+76
+00:05:05,080 --> 00:05:08,120
+At the top, you'll have the AutoRig Pro rigging features.
+
+77
+00:05:08,840 --> 00:05:13,420
+Below it is the smart features, which we'll actually be using in a second.
+
+78
+00:05:13,700 --> 00:05:17,900
+The smart features allow you to rig a humanoid character really simply.
+
+79
+00:05:18,780 --> 00:05:20,840
+Remap is actually retargeting.
+
+80
+00:05:20,840 --> 00:05:23,120
+And I already covered retargeting.
+
+81
+00:05:23,260 --> 00:05:28,720
+If you want to know how to use this feature in AutoRig Pro, I already have a really in-depth
+
+82
+00:05:28,720 --> 00:05:29,740
+video about that.
+
+83
+00:05:29,880 --> 00:05:31,040
+And I'll share a link.
+
+84
+00:05:32,310 --> 00:05:38,520
+And finally, we have export, which basically helps you export AutoRig Pro rigs to game
+
+85
+00:05:38,520 --> 00:05:40,480
+engines or other applications.
+
+86
+00:05:40,480 --> 00:05:45,880
+But mainly game engines, and there are special presets for Unity and Unreal.
+
+87
+00:05:46,880 --> 00:05:48,580
+Alright, that was the overview.
+
+88
+00:05:48,580 --> 00:05:51,740
+Now we're going to focus on the smart features.
+
+89
+00:05:52,100 --> 00:05:57,480
+So I'm going to select my little character here, click the only button that I see here
+
+90
+00:05:57,480 --> 00:05:59,560
+under smart, get selected objects.
+
+91
+00:06:00,440 --> 00:06:03,340
+You have the choice between full body and facial only.
+
+92
+00:06:03,560 --> 00:06:06,880
+We're going to be doing the body now, so full body and press OK.
+
+93
+00:06:08,100 --> 00:06:14,460
+When we press OK, AutoRig Pro automatically puts us in front view, and it gives us these buttons.
+
+94
+00:06:14,460 --> 00:06:18,640
+So the main button that we are interested in is this Add button.
+
+95
+00:06:18,800 --> 00:06:20,440
+So first we want to add the neck.
+
+96
+00:06:20,780 --> 00:06:26,520
+When I press the button, this circle will appear, and I can place it somewhere at the base of the neck.
+
+97
+00:06:26,740 --> 00:06:33,720
+There isn't a very precise guide as to where to place these points, but you don't have to be super precise.
+
+98
+00:06:33,720 --> 00:06:38,140
+And you can also fine-tune the placement of the actual bones later.
+
+99
+00:06:38,560 --> 00:06:39,860
+You'll see that in a minute.
+
+100
+00:06:40,120 --> 00:06:41,820
+So next I want to place a chin.
+
+101
+00:06:42,520 --> 00:06:45,780
+So I'm going to place it around here, and I can also zoom in.
+
+102
+00:06:46,100 --> 00:06:50,980
+Once I've clicked to confirm, I can always press G again and keep moving the marker.
+
+103
+00:06:50,980 --> 00:06:54,420
+Next, I'm going to zoom out and add the shoulders.
+
+104
+00:06:54,920 --> 00:06:59,340
+So when placing the shoulders, don't really place them on the top of the shoulder.
+
+105
+00:06:59,600 --> 00:07:02,780
+Place it a little bit inside the volume of the shoulder.
+
+106
+00:07:03,160 --> 00:07:03,820
+Something like this.
+
+107
+00:07:04,540 --> 00:07:08,960
+And if your character is symmetrical like mine, you can keep the mirror option on,
+
+108
+00:07:09,100 --> 00:07:13,660
+and you can simply work on one marker and the other one will be set up automatically.
+
+109
+00:07:13,980 --> 00:07:20,640
+If your character is not symmetrical, then you can turn off mirror and move each one individually.
+
+110
+00:07:20,640 --> 00:07:24,620
+But in my case, I want to use the mirror option to save some time.
+
+111
+00:07:25,080 --> 00:07:29,000
+So next we want to add the wrist, like this.
+
+112
+00:07:30,000 --> 00:07:31,320
+Next, spine root.
+
+113
+00:07:31,660 --> 00:07:36,680
+So again, this is not entirely clear, but place it somewhere in the crotch area,
+
+114
+00:07:36,880 --> 00:07:41,040
+maybe a little bit higher, something like this, where the base of the spine would be.
+
+115
+00:07:41,580 --> 00:07:43,600
+And next we want to add the ankles.
+
+116
+00:07:45,220 --> 00:07:46,500
+So somewhere here.
+
+117
+00:07:47,000 --> 00:07:48,700
+And here is another important tip.
+
+118
+00:07:48,700 --> 00:07:52,580
+You only need to place these markers from the front view.
+
+119
+00:07:52,960 --> 00:07:54,660
+Technically, you can go to the side view.
+
+120
+00:07:55,640 --> 00:07:58,840
+In this case, they are already kind of in a good position,
+
+121
+00:07:59,060 --> 00:08:02,980
+but you can possibly try to move them around, but you don't need to.
+
+122
+00:08:03,640 --> 00:08:07,720
+You just need to place them from the front view and then Autoric Pro knows what to do.
+
+123
+00:08:08,720 --> 00:08:10,820
+One exception may be the ankle.
+
+124
+00:08:11,120 --> 00:08:15,300
+I just find it a little bit easier to find the right spot from the side view.
+
+125
+00:08:15,300 --> 00:08:16,480
+So something like this.
+
+126
+00:08:17,740 --> 00:08:19,760
+These are all of the markers that we need.
+
+127
+00:08:20,100 --> 00:08:25,360
+Next, Autoric Pro will try to automatically place all of the bones, including fingers.
+
+128
+00:08:25,560 --> 00:08:28,100
+And it will try to detect the fingers automatically.
+
+129
+00:08:28,500 --> 00:08:31,740
+We just need to let it know how many fingers there are.
+
+130
+00:08:31,740 --> 00:08:35,280
+You can have up to five, like in a realistic human.
+
+131
+00:08:35,600 --> 00:08:41,240
+But in this case, my character is simplified and it has basically a glove hand.
+
+132
+00:08:41,500 --> 00:08:43,640
+So basically I have two fingers.
+
+133
+00:08:43,840 --> 00:08:46,460
+This big lump and then the thumb.
+
+134
+00:08:46,660 --> 00:08:49,460
+So I'm going to set my number of fingers to two.
+
+135
+00:08:50,180 --> 00:08:54,180
+Below it are the settings for the automatic finger detection.
+
+136
+00:08:54,440 --> 00:08:58,440
+I usually just use the default settings and it tends to work well.
+
+137
+00:08:58,600 --> 00:09:01,740
+And if it doesn't, then we can tweak the fingers manually.
+
+138
+00:09:01,740 --> 00:09:03,300
+I'm going to show you this as well.
+
+139
+00:09:04,140 --> 00:09:06,220
+Most of the settings we're going to leave to default.
+
+140
+00:09:06,480 --> 00:09:10,980
+So this skeleton setting is mainly if you're going to be using Unreal.
+
+141
+00:09:11,360 --> 00:09:13,200
+For now, we're going to leave it to default.
+
+142
+00:09:13,900 --> 00:09:17,080
+Spine count will define how many spine bones there will be.
+
+143
+00:09:18,100 --> 00:09:20,800
+My character is kind of simple, so three is fine.
+
+144
+00:09:21,500 --> 00:09:23,460
+These next options are kind of advanced.
+
+145
+00:09:23,640 --> 00:09:25,280
+We can talk about them in another video.
+
+146
+00:09:26,300 --> 00:09:29,260
+Neck count will define how many neck bones there will be.
+
+147
+00:09:29,540 --> 00:09:31,360
+This character again is kind of simple.
+
+148
+00:09:31,860 --> 00:09:32,420
+One is fine.
+
+149
+00:09:33,420 --> 00:09:35,540
+Twist count is the number of twist bones.
+
+150
+00:09:35,800 --> 00:09:39,340
+So in the legs and arms, each part of the limb.
+
+151
+00:09:39,460 --> 00:09:43,720
+So for example, the upper arm and the lower arm can have twist bones.
+
+152
+00:09:43,880 --> 00:09:47,000
+And they should have twist bones because that helps with the deformation.
+
+153
+00:09:47,000 --> 00:09:47,780
+Of the character.
+
+154
+00:09:48,100 --> 00:09:49,880
+So the default is twist count of one.
+
+155
+00:09:50,060 --> 00:09:53,120
+Which means that one additional bone will be placed here at the shoulder.
+
+156
+00:09:53,720 --> 00:09:54,880
+And one at the wrist.
+
+157
+00:09:55,100 --> 00:09:57,360
+And that will help improve the deformations.
+
+158
+00:09:58,380 --> 00:10:00,160
+And it is similar with the leg.
+
+159
+00:10:00,340 --> 00:10:02,120
+So I'm going to keep this to default.
+
+160
+00:10:02,540 --> 00:10:03,840
+Then we have facial setup.
+
+161
+00:10:04,640 --> 00:10:07,140
+And my character doesn't have any face features.
+
+162
+00:10:07,360 --> 00:10:08,640
+So I'm going to skip this.
+
+163
+00:10:08,820 --> 00:10:10,980
+And I can go ahead and press go.
+
+164
+00:10:10,980 --> 00:10:13,860
+Which will create some bones for me.
+
+165
+00:10:14,000 --> 00:10:17,960
+So it is important to understand that this is not the final rig.
+
+166
+00:10:18,200 --> 00:10:20,220
+These are the so-called reference bones.
+
+167
+00:10:20,500 --> 00:10:24,340
+Or if you have Rigify experience, you can call it MetaRig.
+
+168
+00:10:24,600 --> 00:10:29,760
+So in most cases, ARP will do a good job at placing the bones at the right places.
+
+169
+00:10:31,140 --> 00:10:34,420
+Usually, the elbow may need a little bit of tweaking.
+
+170
+00:10:36,580 --> 00:10:42,300
+For the elbow, it is important, just like in Rigify, that the arm is not too straight.
+
+171
+00:10:44,860 --> 00:10:47,580
+You want to give a little bit of an angle to these two bones.
+
+172
+00:10:48,040 --> 00:10:49,720
+Autoreg Pro will do this automatically.
+
+173
+00:10:50,060 --> 00:10:52,620
+But if you're tweaking this position, then keep that in mind.
+
+174
+00:10:54,100 --> 00:10:56,760
+And here we can see the placement of the fingers.
+
+175
+00:10:57,040 --> 00:10:59,380
+It is not bad, but we can tweak it a little bit.
+
+176
+00:10:59,560 --> 00:11:04,200
+If I look from the front view, this joint here seems a little bit misplaced.
+
+177
+00:11:04,400 --> 00:11:07,580
+I'm just going to move it deeper inside the hand.
+
+178
+00:11:11,420 --> 00:11:12,580
+So something like this.
+
+179
+00:11:13,500 --> 00:11:18,860
+And then this joint can be a little bit deeper into the thump.
+
+180
+00:11:19,360 --> 00:11:21,240
+Okay, this looks good.
+
+181
+00:11:24,040 --> 00:11:25,800
+The knee can be a little bit lower.
+
+182
+00:11:26,400 --> 00:11:32,740
+And these bones, these little bones at the foot, will determine the behavior of the foot.
+
+183
+00:11:32,880 --> 00:11:36,780
+And we kind of need to place them at the edges of the foot.
+
+184
+00:11:39,860 --> 00:11:41,200
+Something like this.
+
+185
+00:11:43,360 --> 00:11:47,560
+When working with the reference bones, you can go to the Autoreg Pro tab.
+
+186
+00:11:48,660 --> 00:11:53,820
+And in here, you have a bunch of useful features, which I'm going to cover in an advanced video.
+
+187
+00:11:54,080 --> 00:11:58,740
+For now, I just want to show you how easy it is to achieve good results with just the default settings.
+
+188
+00:11:58,740 --> 00:12:04,300
+But basically, if you select any of these bones, you have limp options for each of the parts of the rig.
+
+189
+00:12:04,900 --> 00:12:09,880
+You can duplicate them and delete them and so on to create advanced rigs.
+
+190
+00:12:10,000 --> 00:12:13,480
+But for now, I just want to go ahead and click match to rig.
+
+191
+00:12:13,700 --> 00:12:17,860
+So this is the magic button that will create an advanced rig for you.
+
+192
+00:12:18,080 --> 00:12:19,140
+So let's click it.
+
+193
+00:12:20,280 --> 00:12:24,160
+And you'll see these pretty shapes that Autoreg Pro created for us.
+
+194
+00:12:24,340 --> 00:12:26,880
+And that's it. The rig is actually working.
+
+195
+00:12:27,100 --> 00:12:29,840
+We can go to pause mode now and give it a try.
+
+196
+00:12:30,020 --> 00:12:34,300
+So you'll see that something is happening, but the character itself is not moving.
+
+197
+00:12:34,840 --> 00:12:41,460
+To make sure that our rig moves the character, there is a process called binding or skinning or weighting.
+
+198
+00:12:42,540 --> 00:12:47,800
+So I'll go to object mode and click on the skin tab under Autoreg Pro.
+
+199
+00:12:48,540 --> 00:12:52,420
+I'm going to select the mesh and then shift select the character.
+
+200
+00:12:53,300 --> 00:12:57,580
+And Autoreg Pro has a bunch of advanced binding options.
+
+201
+00:12:57,640 --> 00:13:02,640
+And I'm actually going to cover some of them in the next example in the advanced character.
+
+202
+00:13:02,880 --> 00:13:06,180
+But for this simple character, you can just press the bind button.
+
+203
+00:13:06,800 --> 00:13:10,560
+And a second later, you can go to your rig, go to pause mode.
+
+204
+00:13:10,560 --> 00:13:15,440
+By the way, I'm using a pie menu. You can just go in here and choose pause mode.
+
+205
+00:13:16,260 --> 00:13:22,400
+And now if you move the hand, for example, the whole arm will be moving in IK mode.
+
+206
+00:13:24,560 --> 00:13:27,920
+I'm going to try to give you an overview of the rig controls.
+
+207
+00:13:28,160 --> 00:13:30,280
+For now, let's not go too deep into this.
+
+208
+00:13:33,600 --> 00:13:38,480
+But you can see that the character is moving with the rig and you can see how easy it was.
+
+209
+00:13:38,480 --> 00:13:43,500
+We just placed a couple of markers, pressed a couple of buttons and now we have this.
+
+210
+00:13:43,740 --> 00:13:46,480
+We have a moving character. It's pretty cool.
+
+211
+00:13:47,040 --> 00:13:53,540
+So I hope this shows you that rigging, especially when using an Autorigger, doesn't need to be scary.
+
+212
+00:13:53,840 --> 00:13:56,800
+And when you're ready, let's move on to the advanced example.
+
+213
+00:13:57,860 --> 00:14:00,580
+I'm going to open my complex human example.
+
+214
+00:14:02,780 --> 00:14:03,700
+Here it is.
+
+215
+00:14:04,260 --> 00:14:06,900
+And again, here you can read the license.
+
+216
+00:14:07,280 --> 00:14:10,860
+In this case, I downloaded this model from Sketchfab.
+
+217
+00:14:11,100 --> 00:14:17,080
+The license was Creative Commons Attribution, which means that I have to give credit to the original creator.
+
+218
+00:14:17,360 --> 00:14:19,020
+Thank you for this great model.
+
+219
+00:14:19,020 --> 00:14:21,780
+And I did some edits myself.
+
+220
+00:14:21,980 --> 00:14:30,320
+Basically, when you import Sketchfab models into Blender, they can have some problems and I just cleaned up the model and the materials.
+
+221
+00:14:30,620 --> 00:14:35,780
+So again, feel free to use this model for any purpose, as long as you credit the creators.
+
+222
+00:14:37,400 --> 00:14:39,740
+So let's take a quick look at this model.
+
+223
+00:14:39,940 --> 00:14:43,100
+It actually consists of several separate meshes.
+
+224
+00:14:43,480 --> 00:14:47,200
+So the main one is this body mesh, which I can hide.
+
+225
+00:14:47,660 --> 00:14:49,920
+And then there is a hair mesh.
+
+226
+00:14:51,580 --> 00:14:53,820
+Both eyes are a separate object.
+
+227
+00:14:54,300 --> 00:14:59,980
+There are eyelashes, upper teeth, lower teeth and a tongue.
+
+228
+00:15:00,240 --> 00:15:01,320
+So let's undo.
+
+229
+00:15:01,740 --> 00:15:03,740
+And Alt H to unhide everything.
+
+230
+00:15:04,480 --> 00:15:10,980
+So if you have a similar model, but everything is joined into a single object, I can do something like this.
+
+231
+00:15:11,180 --> 00:15:13,680
+Just select everything, Ctrl J and join.
+
+232
+00:15:13,940 --> 00:15:22,420
+And then I could go to edit mode and press L to select the different parts that I want to separate into a separate object.
+
+233
+00:15:24,000 --> 00:15:29,140
+I can also box select like this and then press Ctrl L and that will complete the selection.
+
+234
+00:15:30,160 --> 00:15:33,100
+And now, let's see.
+
+235
+00:15:34,580 --> 00:15:37,220
+Another technique is to enable X-Ray.
+
+236
+00:15:38,060 --> 00:15:38,540
+Okay.
+
+237
+00:15:43,380 --> 00:15:45,740
+And now everything that I wanted is selected.
+
+238
+00:15:45,940 --> 00:15:49,080
+I'm going to press P and split it into a new model.
+
+239
+00:15:49,080 --> 00:15:53,720
+And I can keep doing this, just selecting the meshes and separating them.
+
+240
+00:15:54,600 --> 00:15:56,200
+So I'm going to just undo.
+
+241
+00:15:58,720 --> 00:16:00,440
+And get my separate meshes.
+
+242
+00:16:01,980 --> 00:16:08,780
+And when rigging this kind of complex character with AutoRig Pro, you may want to hide meshes that will get in the way.
+
+243
+00:16:08,780 --> 00:16:10,720
+Especially when doing the facial setup.
+
+244
+00:16:10,920 --> 00:16:12,540
+This character has facial features.
+
+245
+00:16:12,820 --> 00:16:14,460
+So we are going to rig the face as well.
+
+246
+00:16:16,040 --> 00:16:20,420
+So I want to hide the hair and also the eyelashes.
+
+247
+00:16:20,920 --> 00:16:22,620
+I'll explain why in a second.
+
+248
+00:16:23,660 --> 00:16:27,400
+Okay, so with that, I can just box select over the whole character.
+
+249
+00:16:27,680 --> 00:16:29,440
+This will also select the teeth.
+
+250
+00:16:29,440 --> 00:16:32,480
+That is not that important because they are inside.
+
+251
+00:16:32,840 --> 00:16:33,960
+So they won't get in the way.
+
+252
+00:16:34,480 --> 00:16:36,880
+So then I can go to ARP, Smart.
+
+253
+00:16:37,760 --> 00:16:40,340
+And I have to make one of the objects active.
+
+254
+00:16:40,660 --> 00:16:42,280
+So just shift and click on it.
+
+255
+00:16:42,800 --> 00:16:45,640
+Go to Smart and get selected objects.
+
+256
+00:16:46,220 --> 00:16:48,040
+Choose full body and press OK.
+
+257
+00:16:48,620 --> 00:16:51,820
+So now the process is the same as in the previous part.
+
+258
+00:16:52,280 --> 00:16:52,660
+Add neck.
+
+259
+00:16:53,720 --> 00:16:54,540
+Add chin.
+
+260
+00:16:56,460 --> 00:16:57,380
+Add shoulders.
+
+261
+00:16:58,640 --> 00:17:00,920
+Kind of inside the shoulder volume.
+
+262
+00:17:01,860 --> 00:17:03,020
+Add wrists.
+
+263
+00:17:04,540 --> 00:17:05,960
+Add spine root.
+
+264
+00:17:07,060 --> 00:17:08,160
+Add ankles.
+
+265
+00:17:10,200 --> 00:17:13,200
+Again, I'm going to look from the side view just for the ankles.
+
+266
+00:17:13,880 --> 00:17:15,780
+And place them around here.
+
+267
+00:17:18,180 --> 00:17:22,160
+Now this is a realistic character and it has five fingers.
+
+268
+00:17:22,640 --> 00:17:24,360
+So number of fingers, five.
+
+269
+00:17:24,360 --> 00:17:28,100
+And the detection settings, I'll just leave to default.
+
+270
+00:17:29,000 --> 00:17:31,720
+Spine count and the other settings, I'll leave to default.
+
+271
+00:17:32,260 --> 00:17:34,400
+And then I want to do the facial setup.
+
+272
+00:17:34,940 --> 00:17:38,100
+Just press on the button and go to front view.
+
+273
+00:17:39,720 --> 00:17:44,300
+And Autoreg Pro gives us these lines that we want to align to our character.
+
+274
+00:17:44,300 --> 00:17:45,800
+So first there is the chin.
+
+275
+00:17:46,060 --> 00:17:52,400
+And just like with the body markers, there is no precise guide as to where to place them.
+
+276
+00:17:52,900 --> 00:17:55,300
+But a lot of them actually make sense.
+
+277
+00:17:55,560 --> 00:17:58,000
+So for example, this is the chin line.
+
+278
+00:17:58,220 --> 00:18:06,020
+So I want to place the lower dot at the bottom of the chin and the upper one at the end of the chin.
+
+279
+00:18:06,020 --> 00:18:06,900
+Something like this.
+
+280
+00:18:07,500 --> 00:18:08,380
+Then the mouth.
+
+281
+00:18:08,580 --> 00:18:10,980
+I may want to show the textures here.
+
+282
+00:18:12,200 --> 00:18:16,600
+And then I can press L to select the whole mouth marker.
+
+283
+00:18:16,800 --> 00:18:18,280
+And I can move it with G.
+
+284
+00:18:18,860 --> 00:18:20,400
+I can also scale it.
+
+285
+00:18:21,540 --> 00:18:23,980
+And then I'm going to scale it down a little bit.
+
+286
+00:18:24,140 --> 00:18:28,700
+And then scale and press Z to scale it on the Z axis.
+
+287
+00:18:29,380 --> 00:18:32,920
+And then place these corners at the corners of the mouth.
+
+288
+00:18:33,300 --> 00:18:37,220
+So you can place these dots on the outline of the mouth.
+
+289
+00:18:37,500 --> 00:18:40,940
+But there is an official video from the creator of Autoreg Pro.
+
+290
+00:18:41,120 --> 00:18:45,280
+And he places these markers a little bit inside the volume of the mouth.
+
+291
+00:18:46,140 --> 00:18:46,940
+The nose.
+
+292
+00:18:47,400 --> 00:18:49,260
+This is the tip of the nose.
+
+293
+00:18:49,360 --> 00:18:51,760
+And this is basically the top of the nose.
+
+294
+00:18:52,600 --> 00:18:57,840
+When aligning the eyes, I may actually want to go to object mode here.
+
+295
+00:18:58,400 --> 00:18:59,180
+Object mode.
+
+296
+00:18:59,440 --> 00:19:00,300
+And select the eyelashes.
+
+297
+00:19:00,860 --> 00:19:05,440
+When you go into the face setup, Autoreg Pro unhides all of the meshes for some reason.
+
+298
+00:19:05,680 --> 00:19:08,400
+So I'm going to hide these again.
+
+299
+00:19:09,060 --> 00:19:10,980
+Select the markers again.
+
+300
+00:19:11,180 --> 00:19:12,000
+Go to edit mode.
+
+301
+00:19:12,880 --> 00:19:14,880
+And then again go to front view.
+
+302
+00:19:16,000 --> 00:19:19,260
+With L, I'm going to select this whole marker for the eye.
+
+303
+00:19:19,780 --> 00:19:23,120
+Press S and Z to squash it.
+
+304
+00:19:23,940 --> 00:19:25,380
+Move it over the eye.
+
+305
+00:19:25,380 --> 00:19:27,660
+I can rotate it and scale it.
+
+306
+00:19:27,840 --> 00:19:32,120
+And that will give me almost perfect alignment in this case.
+
+307
+00:19:32,360 --> 00:19:36,760
+But I can then grab each of the individual dots and place them where they should be.
+
+308
+00:19:36,980 --> 00:19:39,320
+So this is the inner corner of the eye.
+
+309
+00:19:39,400 --> 00:19:40,740
+And this is the outer corner.
+
+310
+00:19:41,100 --> 00:19:46,460
+And the rest of the dots are just aligned at the outline of the eye.
+
+311
+00:19:47,260 --> 00:19:48,680
+Then we have the browse.
+
+312
+00:19:49,280 --> 00:19:53,740
+And here the texture tells me exactly where to place the markers.
+
+313
+00:19:54,080 --> 00:19:58,000
+If I was in a solid mode, I wouldn't be quite sure where to place them.
+
+314
+00:19:58,400 --> 00:20:00,500
+Another technique is to enable wireframe.
+
+315
+00:20:01,280 --> 00:20:06,220
+And that may enable you to see where the placement should go.
+
+316
+00:20:06,220 --> 00:20:07,540
+But yeah.
+
+317
+00:20:07,840 --> 00:20:11,480
+But in this case, the texture will show us the exact placement.
+
+318
+00:20:12,100 --> 00:20:14,880
+And now we come to this line here.
+
+319
+00:20:15,060 --> 00:20:18,580
+Which to me is the most mysterious and unclear of all.
+
+320
+00:20:18,820 --> 00:20:22,020
+But again, if we look at the image from the official video.
+
+321
+00:20:22,100 --> 00:20:24,540
+It is placed something like this.
+
+322
+00:20:25,920 --> 00:20:27,600
+Along the cheeks of the character.
+
+323
+00:20:28,780 --> 00:20:30,460
+And finally we have the ears.
+
+324
+00:20:30,920 --> 00:20:33,820
+So just align this dot with the bottom of the ear.
+
+325
+00:20:34,100 --> 00:20:36,420
+And this one with the top of the ear.
+
+326
+00:20:37,540 --> 00:20:40,500
+And make sure that all dots are overlapping with the mesh.
+
+327
+00:20:40,780 --> 00:20:44,380
+If you have a dot like this, you will get an error when you press go.
+
+328
+00:20:44,520 --> 00:20:45,540
+I'm going to show you in a second.
+
+329
+00:20:46,700 --> 00:20:48,580
+And here we have the eyeball setup.
+
+330
+00:20:48,840 --> 00:20:50,700
+So here again, I'm going to go to object mode.
+
+331
+00:20:51,020 --> 00:20:52,120
+Select my eye mesh.
+
+332
+00:20:52,280 --> 00:20:56,180
+And you'll see that both eyes are joined into a single object.
+
+333
+00:20:56,400 --> 00:20:59,980
+So in this case, I want to select one eye object.
+
+334
+00:20:59,980 --> 00:21:00,560
+One.
+
+335
+00:21:00,840 --> 00:21:03,520
+And it will be my eyes object.
+
+336
+00:21:04,440 --> 00:21:06,620
+If, if I go to edit mode.
+
+337
+00:21:06,640 --> 00:21:08,280
+And I select one of the eyes.
+
+338
+00:21:08,540 --> 00:21:10,360
+And separate it into a separate mesh.
+
+339
+00:21:10,860 --> 00:21:12,360
+Then I have to select two eyes.
+
+340
+00:21:13,540 --> 00:21:16,740
+And select the right eyeball in this field here.
+
+341
+00:21:17,020 --> 00:21:17,920
+But I'm going to undo.
+
+342
+00:21:19,740 --> 00:21:20,300
+Okay.
+
+343
+00:21:20,520 --> 00:21:23,040
+My eyes are again joined into a single object.
+
+344
+00:21:23,380 --> 00:21:25,260
+Now I'm going to select one eyeball.
+
+345
+00:21:25,540 --> 00:21:27,160
+And my eyes object.
+
+346
+00:21:28,300 --> 00:21:29,840
+If this field is empty.
+
+347
+00:21:30,580 --> 00:21:31,820
+And you press go.
+
+348
+00:21:32,020 --> 00:21:32,580
+You'll get an error.
+
+349
+00:21:32,980 --> 00:21:37,600
+So make sure that you enter the eyes in here.
+
+350
+00:21:38,900 --> 00:21:41,140
+And also here is the other error that you can get.
+
+351
+00:21:42,280 --> 00:21:45,280
+If I just move this marker outside of the mesh.
+
+352
+00:21:45,420 --> 00:21:45,980
+And press go.
+
+353
+00:21:46,140 --> 00:21:47,100
+I'll get another error.
+
+354
+00:21:47,820 --> 00:21:49,220
+So I'll undo.
+
+355
+00:21:50,240 --> 00:21:51,400
+Everything is overlapping.
+
+356
+00:21:51,820 --> 00:21:52,920
+Eyes are set up.
+
+357
+00:21:53,280 --> 00:21:54,140
+And then I can press go.
+
+358
+00:21:57,790 --> 00:22:00,130
+And here just like in the previous example.
+
+359
+00:22:00,570 --> 00:22:03,390
+Autoreg Pro created the bones for us.
+
+360
+00:22:03,550 --> 00:22:04,170
+In this case.
+
+361
+00:22:04,350 --> 00:22:06,270
+It also created reference bones.
+
+362
+00:22:06,590 --> 00:22:07,430
+For the eyes.
+
+363
+00:22:07,630 --> 00:22:07,930
+Mouth.
+
+364
+00:22:08,150 --> 00:22:09,510
+So for the whole face.
+
+365
+00:22:10,110 --> 00:22:12,790
+So usually the first thing that you should check.
+
+366
+00:22:12,990 --> 00:22:14,230
+Is the fingers.
+
+367
+00:22:14,550 --> 00:22:15,330
+And in this case.
+
+368
+00:22:16,010 --> 00:22:18,550
+Autoreg Pro did an almost perfect job.
+
+369
+00:22:18,870 --> 00:22:20,230
+At detecting the fingers.
+
+370
+00:22:20,970 --> 00:22:23,170
+If some of the fingers are misaligned.
+
+371
+00:22:23,490 --> 00:22:23,850
+Like this.
+
+372
+00:22:24,850 --> 00:22:25,590
+In my opinion.
+
+373
+00:22:25,770 --> 00:22:27,170
+The best way to align them.
+
+374
+00:22:27,390 --> 00:22:29,030
+Is to switch to volume snapping.
+
+375
+00:22:29,730 --> 00:22:30,770
+Keep snapping off.
+
+376
+00:22:30,770 --> 00:22:32,770
+And then move the joint.
+
+377
+00:22:33,130 --> 00:22:33,810
+And hold control.
+
+378
+00:22:34,250 --> 00:22:36,390
+And it will snap into the volume of the finger.
+
+379
+00:22:39,510 --> 00:22:41,110
+Something important about the fingers.
+
+380
+00:22:41,470 --> 00:22:41,930
+Is that.
+
+381
+00:22:42,310 --> 00:22:44,250
+There is a little bit of a curvature to them.
+
+382
+00:22:45,650 --> 00:22:47,510
+If the curvature is opposite.
+
+383
+00:22:47,930 --> 00:22:48,390
+Like this.
+
+384
+00:22:49,450 --> 00:22:51,250
+Then the rotation of the finger.
+
+385
+00:22:51,430 --> 00:22:52,530
+Will also be wrong.
+
+386
+00:22:53,630 --> 00:22:53,910
+So.
+
+387
+00:22:54,150 --> 00:22:56,010
+Give them the correct curvature.
+
+388
+00:23:00,020 --> 00:23:00,900
+Other than that.
+
+389
+00:23:01,000 --> 00:23:01,540
+It looks good.
+
+390
+00:23:01,780 --> 00:23:03,860
+Maybe the shoulder can be a little bit deeper.
+
+391
+00:23:03,860 --> 00:23:04,640
+Into the mesh.
+
+392
+00:23:06,340 --> 00:23:07,420
+And the elbow.
+
+393
+00:23:08,000 --> 00:23:08,960
+This mesh.
+
+394
+00:23:09,160 --> 00:23:11,000
+Doesn't really have a well defined elbow.
+
+395
+00:23:11,220 --> 00:23:12,460
+But somewhere around here.
+
+396
+00:23:12,640 --> 00:23:12,920
+Is fine.
+
+397
+00:23:13,100 --> 00:23:13,280
+I guess.
+
+398
+00:23:17,940 --> 00:23:19,520
+It can be a little bit hard to tell.
+
+399
+00:23:19,700 --> 00:23:20,560
+If the reference bones.
+
+400
+00:23:20,680 --> 00:23:21,120
+For the face.
+
+401
+00:23:21,340 --> 00:23:21,760
+Are perfect.
+
+402
+00:23:22,300 --> 00:23:22,860
+But usually.
+
+403
+00:23:23,340 --> 00:23:24,460
+Autoreg Pro does a good job.
+
+404
+00:23:27,220 --> 00:23:28,300
+And here is why.
+
+405
+00:23:28,500 --> 00:23:29,540
+We hit the eyelashes.
+
+406
+00:23:29,880 --> 00:23:30,360
+And the hair.
+
+407
+00:23:30,740 --> 00:23:31,340
+You'll see that.
+
+408
+00:23:31,560 --> 00:23:31,960
+The hair.
+
+409
+00:23:32,160 --> 00:23:32,740
+Is overlapping.
+
+410
+00:23:33,060 --> 00:23:33,480
+With the.
+
+411
+00:23:34,020 --> 00:23:34,500
+Brows.
+
+412
+00:23:34,860 --> 00:23:35,340
+So.
+
+413
+00:23:35,340 --> 00:23:36,320
+If we had the hair.
+
+414
+00:23:36,540 --> 00:23:37,020
+Selected.
+
+415
+00:23:37,340 --> 00:23:37,820
+These.
+
+416
+00:23:38,160 --> 00:23:38,640
+Brow bones.
+
+417
+00:23:39,220 --> 00:23:39,580
+Would be.
+
+418
+00:23:40,060 --> 00:23:40,940
+On top of the hair.
+
+419
+00:23:41,840 --> 00:23:42,440
+Which is.
+
+420
+00:23:42,600 --> 00:23:43,360
+Not what we want.
+
+421
+00:23:43,740 --> 00:23:44,820
+And same with the eyes.
+
+422
+00:23:45,360 --> 00:23:46,460
+If the eyelashes.
+
+423
+00:23:46,820 --> 00:23:46,920
+Were.
+
+424
+00:23:47,320 --> 00:23:47,500
+There.
+
+425
+00:23:48,060 --> 00:23:48,980
+Then the eye bones.
+
+426
+00:23:49,260 --> 00:23:50,060
+Would be generated.
+
+427
+00:23:50,340 --> 00:23:51,380
+On top of the eyelashes.
+
+428
+00:23:51,740 --> 00:23:52,140
+Rather than.
+
+429
+00:23:52,280 --> 00:23:53,280
+On the actual eyelids.
+
+430
+00:23:54,680 --> 00:23:55,080
+So.
+
+431
+00:23:55,220 --> 00:23:55,660
+We helped.
+
+432
+00:23:55,780 --> 00:23:56,400
+Autoreg Pro.
+
+433
+00:23:56,660 --> 00:23:57,320
+Align everything.
+
+434
+00:23:57,660 --> 00:23:57,920
+Correctly.
+
+435
+00:23:58,340 --> 00:23:58,940
+And that way.
+
+436
+00:23:58,960 --> 00:23:59,940
+We won't have to do.
+
+437
+00:24:00,120 --> 00:24:00,580
+Any manual.
+
+438
+00:24:00,940 --> 00:24:01,060
+Work.
+
+439
+00:24:01,240 --> 00:24:01,860
+Or at least.
+
+440
+00:24:02,020 --> 00:24:02,380
+Not too much.
+
+441
+00:24:04,720 --> 00:24:05,120
+So.
+
+442
+00:24:05,180 --> 00:24:05,700
+Check your rig.
+
+443
+00:24:05,900 --> 00:24:06,080
+Again.
+
+444
+00:24:07,100 --> 00:24:07,880
+You may need.
+
+445
+00:24:08,020 --> 00:24:08,540
+To align.
+
+446
+00:24:08,760 --> 00:24:09,460
+These little bones.
+
+447
+00:24:09,640 --> 00:24:09,740
+Again.
+
+448
+00:24:10,740 --> 00:24:11,360
+At the edges.
+
+449
+00:24:11,580 --> 00:24:11,920
+Of the foot.
+
+450
+00:24:14,940 --> 00:24:15,760
+And this one.
+
+451
+00:24:15,780 --> 00:24:16,280
+In the middle.
+
+452
+00:24:23,080 --> 00:24:23,520
+So.
+
+453
+00:24:23,640 --> 00:24:23,940
+From here.
+
+454
+00:24:24,140 --> 00:24:24,500
+I can go.
+
+455
+00:24:24,620 --> 00:24:25,580
+To the Autoreg Pro.
+
+456
+00:24:25,860 --> 00:24:25,960
+Tab.
+
+457
+00:24:26,700 --> 00:24:27,140
+And again.
+
+458
+00:24:27,260 --> 00:24:27,780
+In here.
+
+459
+00:24:27,840 --> 00:24:28,600
+I can select.
+
+460
+00:24:28,900 --> 00:24:29,400
+Any of the.
+
+461
+00:24:29,640 --> 00:24:30,260
+Rig parts.
+
+462
+00:24:30,540 --> 00:24:30,740
+And.
+
+463
+00:24:30,920 --> 00:24:31,540
+Check the limb.
+
+464
+00:24:31,960 --> 00:24:32,000
+Options.
+
+465
+00:24:32,440 --> 00:24:32,720
+Again.
+
+466
+00:24:32,820 --> 00:24:33,400
+This is something.
+
+467
+00:24:33,540 --> 00:24:33,940
+That we'll.
+
+468
+00:24:34,180 --> 00:24:34,820
+Talk about.
+
+469
+00:24:35,040 --> 00:24:35,700
+In another video.
+
+470
+00:24:36,160 --> 00:24:36,720
+For now.
+
+471
+00:24:36,760 --> 00:24:37,360
+Let's just use.
+
+472
+00:24:37,380 --> 00:24:38,080
+The default settings.
+
+473
+00:24:38,300 --> 00:24:38,840
+And see.
+
+474
+00:24:38,880 --> 00:24:39,440
+If we can get.
+
+475
+00:24:39,800 --> 00:24:40,320
+Good results.
+
+476
+00:24:40,980 --> 00:24:41,260
+So.
+
+477
+00:24:41,500 --> 00:24:42,500
+Click the magic button.
+
+478
+00:24:42,940 --> 00:24:43,620
+Match the rig.
+
+479
+00:24:46,000 --> 00:24:47,280
+And get the pretty shapes.
+
+480
+00:24:48,400 --> 00:24:48,840
+Nice.
+
+481
+00:24:49,580 --> 00:24:49,940
+Next.
+
+482
+00:24:50,220 --> 00:24:50,300
+Again.
+
+483
+00:24:50,460 --> 00:24:51,020
+We want to skin.
+
+484
+00:24:51,140 --> 00:24:51,480
+The character.
+
+485
+00:24:52,580 --> 00:24:53,380
+And to do so.
+
+486
+00:24:53,640 --> 00:24:54,020
+I'm going to go.
+
+487
+00:24:54,140 --> 00:24:54,700
+To object mode.
+
+488
+00:24:55,460 --> 00:24:56,400
+Select all meshes.
+
+489
+00:24:57,180 --> 00:24:57,420
+And then.
+
+490
+00:24:57,800 --> 00:24:58,120
+Shift select.
+
+491
+00:24:58,380 --> 00:24:58,580
+The rig.
+
+492
+00:24:58,740 --> 00:24:58,840
+So.
+
+493
+00:24:59,000 --> 00:24:59,320
+Make sure.
+
+494
+00:24:59,380 --> 00:24:59,980
+That the rig.
+
+495
+00:25:00,220 --> 00:25:00,420
+Is.
+
+496
+00:25:00,580 --> 00:25:01,440
+The active object.
+
+497
+00:25:01,820 --> 00:25:02,140
+Then go.
+
+498
+00:25:02,240 --> 00:25:02,560
+To skin.
+
+499
+00:25:04,160 --> 00:25:04,520
+If.
+
+500
+00:25:05,080 --> 00:25:05,720
+If a mesh.
+
+501
+00:25:05,820 --> 00:25:06,640
+Is the active object.
+
+502
+00:25:07,120 --> 00:25:07,280
+Then.
+
+503
+00:25:07,540 --> 00:25:08,020
+We won't be able.
+
+504
+00:25:08,080 --> 00:25:08,660
+To click bind.
+
+505
+00:25:08,860 --> 00:25:09,100
+So.
+
+506
+00:25:09,200 --> 00:25:09,640
+I'll make.
+
+507
+00:25:09,840 --> 00:25:10,460
+The rig.
+
+508
+00:25:10,740 --> 00:25:10,840
+Active.
+
+509
+00:25:11,520 --> 00:25:11,720
+So.
+
+510
+00:25:11,760 --> 00:25:11,980
+Next.
+
+511
+00:25:18,840 --> 00:25:19,020
+We already.
+
+512
+00:25:19,260 --> 00:25:19,900
+Did this.
+
+513
+00:25:20,080 --> 00:25:20,360
+In the.
+
+514
+00:25:20,880 --> 00:25:21,300
+Simple example.
+
+515
+00:25:21,920 --> 00:25:22,260
+But the more.
+
+516
+00:25:22,780 --> 00:25:23,060
+The character.
+
+517
+00:25:23,300 --> 00:25:23,480
+Gets.
+
+518
+00:25:23,660 --> 00:25:24,140
+The more.
+
+519
+00:25:24,400 --> 00:25:24,800
+Difficult.
+
+520
+00:25:24,920 --> 00:25:25,240
+It is.
+
+521
+00:25:25,400 --> 00:25:25,940
+To weight it.
+
+522
+00:25:26,260 --> 00:25:26,660
+Nicely.
+
+523
+00:25:27,220 --> 00:25:27,620
+Binding.
+
+524
+00:25:28,020 --> 00:25:28,100
+Is.
+
+525
+00:25:28,280 --> 00:25:28,900
+As important.
+
+526
+00:25:29,540 --> 00:25:30,140
+In rigging.
+
+527
+00:25:30,520 --> 00:25:30,920
+As.
+
+528
+00:25:31,160 --> 00:25:31,700
+The creation.
+
+529
+00:25:31,980 --> 00:25:32,280
+Of this.
+
+530
+00:25:32,400 --> 00:25:32,680
+Amateur.
+
+531
+00:25:33,140 --> 00:25:33,440
+And that's.
+
+532
+00:25:33,560 --> 00:25:33,580
+Why.
+
+533
+00:25:33,760 --> 00:25:34,400
+It's really nice.
+
+534
+00:25:34,400 --> 00:25:35,180
+That auto rig.
+
+535
+00:25:35,180 --> 00:25:35,500
+Pro.
+
+536
+00:25:36,020 --> 00:25:37,740
+To make.
+
+537
+00:25:37,760 --> 00:25:38,380
+The binding.
+
+538
+00:25:38,760 --> 00:25:38,780
+Process.
+
+539
+00:25:39,000 --> 00:25:39,340
+A little bit.
+
+540
+00:25:39,420 --> 00:25:39,720
+Easier.
+
+541
+00:25:40,280 --> 00:25:40,620
+So.
+
+542
+00:25:40,760 --> 00:25:41,080
+Let's look.
+
+543
+00:25:41,200 --> 00:25:41,720
+At the settings.
+
+544
+00:25:42,140 --> 00:25:42,400
+First.
+
+545
+00:25:42,500 --> 00:25:42,800
+We have.
+
+546
+00:25:43,000 --> 00:25:43,440
+The engine.
+
+547
+00:25:43,960 --> 00:25:44,480
+And by default.
+
+548
+00:25:44,640 --> 00:25:45,100
+It is set.
+
+549
+00:25:45,280 --> 00:25:46,160
+To heat maps.
+
+550
+00:25:46,580 --> 00:25:46,780
+So.
+
+551
+00:25:46,860 --> 00:25:47,180
+If you have.
+
+552
+00:25:47,280 --> 00:25:47,560
+A little bit.
+
+553
+00:25:47,580 --> 00:25:48,260
+Of experience.
+
+554
+00:25:48,480 --> 00:25:48,540
+With.
+
+555
+00:25:48,540 --> 00:25:48,960
+Rigging.
+
+556
+00:25:49,100 --> 00:25:49,380
+In blender.
+
+557
+00:25:49,580 --> 00:25:50,400
+You may know.
+
+558
+00:25:50,620 --> 00:25:51,000
+Blender's.
+
+559
+00:25:51,140 --> 00:25:51,700
+Automatic weights.
+
+560
+00:25:52,360 --> 00:25:52,760
+If I have.
+
+561
+00:25:52,820 --> 00:25:53,160
+A mesh.
+
+562
+00:25:53,340 --> 00:25:53,520
+And.
+
+563
+00:25:54,180 --> 00:25:54,380
+A rig.
+
+564
+00:25:54,520 --> 00:25:54,840
+Selected.
+
+565
+00:25:54,920 --> 00:25:55,220
+And press.
+
+566
+00:25:55,280 --> 00:25:55,460
+Control.
+
+567
+00:25:55,640 --> 00:25:55,720
+P.
+
+568
+00:25:56,220 --> 00:25:56,980
+I can choose.
+
+569
+00:25:57,200 --> 00:25:57,300
+With.
+
+570
+00:25:57,500 --> 00:25:57,960
+Automatic weights.
+
+571
+00:25:58,400 --> 00:25:59,100
+And that will.
+
+572
+00:25:59,280 --> 00:25:59,600
+Automatically.
+
+573
+00:25:59,800 --> 00:26:00,360
+Assign weights.
+
+574
+00:26:00,640 --> 00:26:01,080
+To the character.
+
+575
+00:26:01,640 --> 00:26:02,420
+When it works.
+
+576
+00:26:02,540 --> 00:26:02,940
+It is.
+
+577
+00:26:03,180 --> 00:26:03,640
+Really great.
+
+578
+00:26:03,940 --> 00:26:04,380
+The problem.
+
+579
+00:26:04,580 --> 00:26:04,820
+Is that.
+
+580
+00:26:05,080 --> 00:26:05,340
+Sometimes.
+
+581
+00:26:05,480 --> 00:26:05,900
+It fails.
+
+582
+00:26:06,180 --> 00:26:06,520
+So.
+
+583
+00:26:06,640 --> 00:26:06,780
+Here.
+
+584
+00:26:06,780 --> 00:26:07,500
+Autoreg Pro.
+
+585
+00:26:07,760 --> 00:26:08,060
+Is using.
+
+586
+00:26:08,220 --> 00:26:08,580
+The exact.
+
+587
+00:26:08,740 --> 00:26:08,900
+Same.
+
+588
+00:26:09,280 --> 00:26:09,500
+Feature.
+
+589
+00:26:09,620 --> 00:26:09,980
+That we have.
+
+590
+00:26:10,080 --> 00:26:10,440
+In blender.
+
+591
+00:26:10,740 --> 00:26:11,180
+Automatic weights.
+
+592
+00:26:11,720 --> 00:26:11,820
+But.
+
+593
+00:26:11,940 --> 00:26:12,260
+It can do.
+
+594
+00:26:12,400 --> 00:26:12,500
+Some.
+
+595
+00:26:13,200 --> 00:26:13,640
+Operations.
+
+596
+00:26:14,400 --> 00:26:14,900
+To help.
+
+597
+00:26:15,140 --> 00:26:15,820
+Avoid errors.
+
+598
+00:26:16,120 --> 00:26:16,680
+For example.
+
+599
+00:26:17,340 --> 00:26:17,780
+By default.
+
+600
+00:26:17,920 --> 00:26:18,400
+It splits.
+
+601
+00:26:18,580 --> 00:26:18,940
+The meshes.
+
+602
+00:26:19,380 --> 00:26:19,560
+So.
+
+603
+00:26:19,700 --> 00:26:20,280
+Very often.
+
+604
+00:26:20,440 --> 00:26:20,940
+The error.
+
+605
+00:26:21,080 --> 00:26:21,460
+That happens.
+
+606
+00:26:21,700 --> 00:26:22,100
+With.
+
+607
+00:26:22,340 --> 00:26:22,860
+Automatic weights.
+
+608
+00:26:23,180 --> 00:26:23,380
+Is.
+
+609
+00:26:23,480 --> 00:26:23,660
+Because.
+
+610
+00:26:23,840 --> 00:26:24,160
+They are.
+
+611
+00:26:24,620 --> 00:26:25,060
+Overlapping.
+
+612
+00:26:25,380 --> 00:26:25,700
+Meshes.
+
+613
+00:26:36,780 --> 00:26:36,940
+Which is.
+
+614
+00:26:37,200 --> 00:26:37,240
+Very.
+
+615
+00:26:37,660 --> 00:26:37,900
+Dense.
+
+616
+00:26:38,360 --> 00:26:38,700
+With.
+
+617
+00:26:38,880 --> 00:26:39,220
+Polygons.
+
+618
+00:26:39,520 --> 00:26:40,020
+You can.
+
+619
+00:26:40,120 --> 00:26:40,180
+Use.
+
+620
+00:26:40,340 --> 00:26:40,640
+This option.
+
+621
+00:26:41,120 --> 00:26:41,540
+In our.
+
+622
+00:26:41,960 --> 00:26:42,200
+It won't.
+
+623
+00:26:42,300 --> 00:26:42,320
+Be.
+
+624
+00:26:42,440 --> 00:26:42,640
+Needed.
+
+625
+00:26:43,120 --> 00:26:43,400
+There are.
+
+626
+00:26:43,540 --> 00:26:43,620
+Some.
+
+627
+00:26:43,940 --> 00:26:44,480
+Advanced settings.
+
+628
+00:26:44,680 --> 00:26:44,780
+That.
+
+629
+00:26:45,000 --> 00:26:45,240
+I won't.
+
+630
+00:26:45,340 --> 00:26:45,440
+Touch.
+
+631
+00:26:45,520 --> 00:26:45,740
+For now.
+
+632
+00:26:45,940 --> 00:26:46,400
+We may.
+
+633
+00:26:46,520 --> 00:26:46,740
+Address.
+
+634
+00:26:46,840 --> 00:26:46,900
+Them.
+
+635
+00:26:47,040 --> 00:26:47,300
+In another.
+
+636
+00:26:47,460 --> 00:26:47,540
+Video.
+
+637
+00:26:47,540 --> 00:26:48,240
+Then.
+
+638
+00:26:48,360 --> 00:26:48,560
+There is.
+
+639
+00:26:48,780 --> 00:26:49,120
+Specials.
+
+640
+00:26:49,640 --> 00:26:49,760
+And.
+
+641
+00:26:49,940 --> 00:26:50,080
+Here.
+
+642
+00:26:50,180 --> 00:26:50,480
+Again.
+
+643
+00:26:50,520 --> 00:26:50,840
+You can.
+
+644
+00:26:51,020 --> 00:26:51,100
+Set.
+
+645
+00:26:51,240 --> 00:26:51,320
+Your.
+
+646
+00:26:51,520 --> 00:26:51,800
+Eyeball.
+
+647
+00:26:51,920 --> 00:26:52,100
+Object.
+
+648
+00:26:52,280 --> 00:26:52,460
+And.
+
+649
+00:26:52,520 --> 00:26:52,620
+That.
+
+650
+00:26:53,120 --> 00:26:53,420
+Automate.
+
+651
+00:26:53,420 --> 00:26:54,400
+It.
+
+652
+00:26:54,400 --> 00:26:54,640
+You.
+
+653
+00:26:55,660 --> 00:26:56,220
+Can.
+
+654
+00:26:56,400 --> 00:26:56,660
+To.
+
+655
+00:26:56,660 --> 00:26:57,140
+To.
+
+656
+00:26:57,140 --> 00:26:57,180
+To.
+
+657
+00:26:57,180 --> 00:26:57,480
+To.
+
+658
+00:26:57,480 --> 00:26:57,500
+To.
+
+659
+00:26:58,120 --> 00:26:58,680
+To.
+
+660
+00:26:58,680 --> 00:26:59,080
+To.
+
+661
+00:26:59,080 --> 00:27:03,280
+automate the process and then we have even more settings to fine-tune the
+
+662
+00:27:03,280 --> 00:27:09,280
+binding you can only use the selected bones you know you can go to pose mode
+
+663
+00:27:09,280 --> 00:27:14,500
+and in here at the last layer is actually where the deforming bones are and if
+
+664
+00:27:14,500 --> 00:27:18,240
+you just select some of these bones then you can use selected bones only and
+
+665
+00:27:18,240 --> 00:27:23,720
+that will limit the effect of the binding only to the selected bones I'm
+
+666
+00:27:23,720 --> 00:27:30,000
+not going to do that right now also you can go to edit mode for the mesh and
+
+667
+00:27:30,000 --> 00:27:34,740
+just select some vertices and if you use selected vertices only again that will
+
+668
+00:27:34,740 --> 00:27:39,840
+limit the effect of the binding only to the selected vertices I think we'll have
+
+669
+00:27:39,840 --> 00:27:46,560
+an opportunity to use this later in this video preserve volume will change
+
+670
+00:27:46,560 --> 00:27:50,880
+something in the armature modifier I'm not a big fan of this option but I'll leave
+
+671
+00:27:50,880 --> 00:27:55,720
+it on and I'll show you what it does later in the video scalefix if the
+
+672
+00:27:55,720 --> 00:28:02,020
+binding fails you can try checking this option and binding again this may fix the
+
+673
+00:28:02,020 --> 00:28:06,740
+problem again it's a little trick that Autoreg Pro does under the hood and so
+
+674
+00:28:06,740 --> 00:28:11,180
+for now I'm going to keep this default options with the default heat maps engine
+
+675
+00:28:12,880 --> 00:28:23,560
+make the armature active and try to bind so after a couple of seconds the
+
+676
+00:28:23,560 --> 00:28:29,080
+process is finished and if I go to pause mode I can try to move some of the rig
+
+677
+00:28:29,080 --> 00:28:35,600
+parts and let's see what happens so here you can see that the arm is moving but
+
+678
+00:28:35,600 --> 00:28:39,360
+here there is a little part that is disconnecting this is a common problem
+
+679
+00:28:39,360 --> 00:28:47,040
+with heat maps but overall it is not too bad it is working and let's check the leg
+
+680
+00:28:47,040 --> 00:28:53,520
+as well so it's also working but here I can see that the foot is stretching for
+
+681
+00:28:53,520 --> 00:28:58,400
+some reason the shoe actually this is not a very common problem but for some
+
+682
+00:28:58,400 --> 00:29:14,380
+reason we are getting it here the body looks okay the head can also move well it
+
+683
+00:29:14,380 --> 00:29:18,940
+seems to be affecting part of the jacket which I don't want but we can fix this
+
+684
+00:29:18,940 --> 00:29:26,700
+later this is the jaw widget if I press G to move it it will open the mouth and it
+
+685
+00:29:26,700 --> 00:29:31,220
+actually works quite well but you can see that the teeth that are inside are
+
+686
+00:29:31,220 --> 00:29:36,200
+being deformed so this is a very common problem with Autoreg Pro
+
+687
+00:29:37,580 --> 00:29:43,400
+I'm going to show you how to fix it a bit later in the video this is the eyes
+
+688
+00:29:43,400 --> 00:29:48,260
+widget if I disable overlays and move it around you'll see that the eyes are moving
+
+689
+00:29:48,260 --> 00:29:57,160
+and we even have a little bit of eyelid deformation going on so not too bad so I
+
+690
+00:29:57,160 --> 00:30:03,100
+can select all bones and press Alt-R Alt-G Alt-S and that will just reset the
+
+691
+00:30:03,100 --> 00:30:07,660
+pose of the character so let's try to switch the binding engine and bind again
+
+692
+00:30:07,660 --> 00:30:12,460
+and see if we get better results so I'm going to switch to the voxelized engine
+
+693
+00:30:12,460 --> 00:30:18,420
+and again select all meshes and have the rig as active so the voxelized engine is a
+
+694
+00:30:18,420 --> 00:30:24,620
+native feature of Autoreg Pro and it has type 1 and type 2 I usually just use type 1
+
+695
+00:30:24,620 --> 00:30:30,300
+there is a voxel resolution if you increase it you may get better results but the
+
+696
+00:30:30,300 --> 00:30:34,900
+process may take longer so again with the default settings let's just press bind and
+
+697
+00:30:34,900 --> 00:30:45,530
+see what happens so again after 20 to 30 seconds the process is finished and I can
+
+698
+00:30:45,530 --> 00:30:51,930
+go to pose mode and try to move the arm and here you'll notice right away that
+
+699
+00:30:51,930 --> 00:30:56,950
+this little piece that was disconnecting before is no longer disconnecting and
+
+700
+00:30:57,610 --> 00:31:06,630
+overall this engine will give you better results with overlapping geometry so again
+
+701
+00:31:06,630 --> 00:31:11,190
+let's try to move the leg and see what happens and the shoe is actually fine now
+
+702
+00:31:11,730 --> 00:31:17,810
+if I rotate the leg around there is just a little bit of clipping between the skin
+
+703
+00:31:17,810 --> 00:31:23,330
+and cloth here we can fix it manually or you can try to play around with the
+
+704
+00:31:23,330 --> 00:31:32,190
+voxelized settings the head will also move fine you'll see that the jacket is no
+
+705
+00:31:32,190 --> 00:31:36,810
+longer affected but there is a little bit of a problem with the skin here down here
+
+706
+00:31:37,610 --> 00:31:40,010
+again this is not too much of a problem
+
+707
+00:31:41,570 --> 00:31:46,550
+but now we come to the disadvantages of voxelized skinning if I try to open the
+
+708
+00:31:46,550 --> 00:31:51,370
+mouth you'll see that it doesn't open at all basically voxel skinning is great at
+
+709
+00:31:51,370 --> 00:31:55,270
+overlapping geometry but when there is polygons that are just close to each
+
+710
+00:31:55,270 --> 00:32:02,190
+other then they'll get fused together like this and also the eyes actually they
+
+711
+00:32:02,190 --> 00:32:09,330
+they're kind of okay but overall heat maps gave us better results for the face and
+
+712
+00:32:09,330 --> 00:32:15,050
+voxelized gave us better results for the body and there is one more option voxel
+
+713
+00:32:15,050 --> 00:32:19,810
+heat diffuse skinning add-on so if you click on it you may see this message saying
+
+714
+00:32:19,810 --> 00:32:24,410
+that the add-on is not installed I actually have this add-on and I made a
+
+715
+00:32:24,410 --> 00:32:30,190
+video about it so if I go to edit preferences add-ons and look for voxel heat
+
+716
+00:32:30,190 --> 00:32:35,010
+diffused skinning and just enable the add-on as soon as it is enabled the
+
+717
+00:32:35,010 --> 00:32:41,090
+warning message will disappear and AutoRig Pro will let me use this add-on
+
+718
+00:32:42,230 --> 00:32:49,710
+but instead of going to the official tab of the add-on I can use it from here so
+
+719
+00:32:49,710 --> 00:32:57,970
+just for fun let's try to bind with this add-on and it's finished now if we try to
+
+720
+00:32:57,970 --> 00:33:06,170
+pose the character you may find a slight differences the overlapping of the sleeves
+
+721
+00:33:06,170 --> 00:33:14,190
+is a little bit better and in the foot if I rotate it around you'll see that skin
+
+722
+00:33:14,190 --> 00:33:26,320
+and cloth are not clipping at all and here if I rotate the head you'll see that the
+
+723
+00:33:26,320 --> 00:33:30,920
+problem with the skin that we had is gone there is a little bit of problem with the
+
+724
+00:33:30,920 --> 00:33:35,660
+cloth now so there is no perfect solution but you see that this add-on has some
+
+725
+00:33:35,660 --> 00:33:39,920
+advantages so if you're okay with spending some additional money you can
+
+726
+00:33:39,920 --> 00:33:44,680
+also buy this add-on it's really great I use it a lot and again I have a
+
+727
+00:33:44,680 --> 00:33:51,200
+dedicated video about the add-on itself but the native voxelized engine works
+
+728
+00:33:51,200 --> 00:33:56,240
+great as well so you can use that so I'm going to bind with voxelized again
+
+729
+00:33:56,240 --> 00:34:08,200
+actually let's try type 2 just so we don't rely on any paid add-ons okay so
+
+730
+00:34:08,200 --> 00:34:17,340
+it's done let's see the results really quickly hmm actually the actually the
+
+731
+00:34:17,340 --> 00:34:25,430
+clipping here is fixed that is nice oh and the clipping in this area is fixed as
+
+732
+00:34:25,430 --> 00:34:30,270
+well so it's definitely worth playing around with these binding settings but
+
+733
+00:34:30,270 --> 00:34:37,210
+of course with a voxelized engine you'll always get this problem in the face so if
+
+734
+00:34:37,210 --> 00:34:42,970
+I just select the face go to edit mode and press alt a to deselect everything and
+
+735
+00:34:43,350 --> 00:34:50,830
+press L while hovering over the face that will select all face vertices then I can go
+
+736
+00:34:50,830 --> 00:34:56,370
+to object mode and shift select the armature let's go to pause mode and really
+
+737
+00:34:56,370 --> 00:35:00,090
+quickly select everything alt R alt G alt S
+
+738
+00:35:01,890 --> 00:35:07,590
+and next in object mode I'm going to switch back to heat maps and choose
+
+739
+00:35:07,590 --> 00:35:20,340
+selected vertices only and then bind so now my face is weighted with heat maps so the
+
+740
+00:35:20,340 --> 00:35:28,520
+mouth will open well but for everything else the voxelized waiting will be kept so
+
+741
+00:35:28,520 --> 00:35:32,820
+I'm really loving this workflow and if this wasn't a tutorial I would just go
+
+742
+00:35:32,820 --> 00:35:37,060
+through these settings really quickly and it would take less than a minute okay
+
+743
+00:35:37,060 --> 00:35:44,260
+now the character is rigged and weighted so it can move with the rig but there
+
+744
+00:35:44,260 --> 00:35:53,120
+are a couple of problem areas so I'm going to move the rig around and try to notice any problems
+
+745
+00:35:53,120 --> 00:36:04,950
+and then we'll try to fix them actually this clipping problem is there I'm not sure why it seemed to be
+
+746
+00:36:04,950 --> 00:36:17,190
+gone before but for the most part the problems will be in the face you'll see that the teeth are
+
+747
+00:36:17,190 --> 00:36:24,050
+stretching really badly so I'll definitely fix this this here is supposed to close the eye but
+
+748
+00:36:24,050 --> 00:36:36,640
+the weights are really not good so I'll work on it a little bit and maybe we'll try to address this
+
+749
+00:36:36,640 --> 00:36:47,040
+problem here so it's mostly weight painting problems and by the way let me quickly address
+
+750
+00:36:47,040 --> 00:36:53,840
+this preserve volume option so we always had this setting checked while binding the mesh what this does
+
+751
+00:36:53,840 --> 00:37:02,740
+is yeah I'll just raise the oops I'll just raise the leg a little bit now go to object mode select
+
+752
+00:37:02,740 --> 00:37:08,760
+the mesh go to the modifier tab and here is the armature modifier which connects the mesh to the bones
+
+753
+00:37:09,580 --> 00:37:16,700
+and in here you'll see this preserve volume option by default blender doesn't use it but I guess the
+
+754
+00:37:16,700 --> 00:37:23,500
+developer of Autoreg Pro likes it so this Autoreg Pro setting here automatically enables this
+
+755
+00:37:23,500 --> 00:37:30,160
+setting in the armature modifier I don't like this setting because it tends to bulge out some areas
+
+756
+00:37:30,160 --> 00:37:36,520
+of the rig and also it doesn't transfer to game engines so it may make your character's deformation
+
+757
+00:37:36,520 --> 00:37:43,260
+better in blender but this will be lost if you export out of blender if you only plan to animate
+
+758
+00:37:43,260 --> 00:37:48,980
+inside blender then you can have it on or off whatever looks better to you I'm going to turn it off but if
+
+759
+00:37:48,980 --> 00:37:58,680
+you plan to export the character then definitely turn it off okay now let's start fixing the problem areas
+
+760
+00:38:01,320 --> 00:38:07,620
+I'll hide the main body mesh and focus on the teeth so again I have upper teeth lower teeth and
+
+761
+00:38:07,620 --> 00:38:14,540
+a tongue object I'll select the upper teeth and before we fix the weights we want to make sure that
+
+762
+00:38:14,540 --> 00:38:23,040
+the bones that correspond to the teeth and tongue are positioned correctly so I'll go back to the rig tab
+
+763
+00:38:23,980 --> 00:38:32,040
+select the rig and click edit reference bones and that will give me again the reference bones or the
+
+764
+00:38:32,040 --> 00:38:40,080
+meta rig whatever you want to call it and you'll find the teeth bones above and below the tongue bones
+
+765
+00:38:40,080 --> 00:38:46,580
+so these three bones are the tongue bones this is the central teeth bone and this is the right
+
+766
+00:38:46,580 --> 00:38:52,760
+teeth bone and this is the left upper teeth bone why do we have left and right actually you don't need
+
+767
+00:38:52,760 --> 00:38:59,260
+to use all of them that will just allow you to bend the teeth which may be useful in cartoony characters
+
+768
+00:38:59,880 --> 00:39:05,540
+so I'm going to select the jaw bone because it is very large and it makes it hard to see what
+
+769
+00:39:05,540 --> 00:39:13,200
+I'm doing so selected press H and then I'll select all of these three upper teeth bones go to the side
+
+770
+00:39:13,200 --> 00:39:20,480
+view and place them inside the volume of the upper teeth and then from the front view I'll place the
+
+771
+00:39:20,480 --> 00:39:27,440
+bones on the sides of the teeth of the upper teeth same thing for the lower teeth just select these three
+
+772
+00:39:27,440 --> 00:39:35,420
+bones they're called teeth bottom ref from the side view place them around here from the front
+
+773
+00:39:35,420 --> 00:39:42,180
+view move them a little bit to the side and that will be it and now in object mode i'm going to
+
+774
+00:39:42,180 --> 00:39:49,840
+select both i'm going to hide both teeth objects and then back to the rig go to edit mode
+
+775
+00:39:53,110 --> 00:40:02,550
+and move the tongue bone and move the tongue bones into position something like this so you can edit
+
+776
+00:40:02,550 --> 00:40:09,130
+these reference bones even after you generate the rig once and even after binding the character to
+
+777
+00:40:09,130 --> 00:40:15,970
+the rig this is not so much thanks to autoreg pro but thanks to blender blender is very flexible in
+
+778
+00:40:15,970 --> 00:40:22,670
+this regard so even at this point if i find that the shoulder is not rotating correctly i can just
+
+779
+00:40:22,670 --> 00:40:28,490
+grab this joint and move it around reposition it and basically change the point of rotation of the
+
+780
+00:40:28,490 --> 00:40:35,290
+shoulder that can be very powerful it's very cool that blender can do that so when i'm done editing
+
+781
+00:40:35,290 --> 00:40:40,770
+the reference bones just in case i'm going to press alt h to unhide any hidden bones this is good
+
+782
+00:40:40,770 --> 00:40:51,250
+practice and match the rig again now you'll see that these teeth widgets and the tongue widgets are
+
+783
+00:40:51,250 --> 00:40:58,650
+placed exactly where they should be so next i'll go to object mode alt h to unhide everything and then
+
+784
+00:40:58,650 --> 00:41:06,630
+i'll hide the main mesh so that i can see the teeth again and so i'll select this upper teeth mesh go to
+
+785
+00:41:07,490 --> 00:41:13,990
+the data properties and here on the vertex groups i'll just click here and choose delete all groups
+
+786
+00:41:14,630 --> 00:41:21,070
+so any weighting that we had on this character will be gone let's do the same for the lower teeth
+
+787
+00:41:22,330 --> 00:41:32,390
+and for the tongue so now if i go to the rig pose mode and move this jaw widget you'll see that it no
+
+788
+00:41:32,390 --> 00:41:40,030
+longer moves the teeth and the tongue when manually tweaking the weights in autoreg pro it is important to
+
+789
+00:41:40,030 --> 00:41:46,930
+know that the deformation bones are here on the last layer you'll see that some of them still look like
+
+790
+00:41:46,930 --> 00:41:53,170
+shapes not like bones you can kind of change this if you go to viewport display and disable shapes but
+
+791
+00:41:53,170 --> 00:42:01,250
+it doesn't matter everything that is here on the last layer is deformation bone and on layer one and
+
+792
+00:42:01,250 --> 00:42:08,610
+two are the controls so when you want to work on weights go to the last layer and all other layers
+
+793
+00:42:08,610 --> 00:42:13,930
+These are so-called mechanism bones, they create the automations in the rig, and it's
+
+794
+00:42:13,930 --> 00:42:15,010
+best to leave them alone.
+
+795
+00:42:16,990 --> 00:42:22,470
+So now, to weight the teeth, I'm going to use again some of the advanced skinning options.
+
+796
+00:42:22,650 --> 00:42:29,110
+So I'm going to select the three teeth bones, right, center, left and right, and then go
+
+797
+00:42:29,110 --> 00:42:35,130
+to skinning, and disable selected vertices only, and enable selected bones only.
+
+798
+00:42:35,130 --> 00:42:42,110
+So now, because I have these three bones selected, AutoRig Pro will only use them for weighting.
+
+799
+00:42:42,310 --> 00:42:49,650
+I'll go to object mode, select the upper teeth, shift-select the rig, I'll choose voxelized,
+
+800
+00:42:49,650 --> 00:42:53,330
+and again make sure that I have this setting enabled, and click bind.
+
+801
+00:42:55,050 --> 00:43:02,530
+Now if I go to pose mode, and move the bones, nothing seems to happen, so I guess it failed.
+
+802
+00:43:03,570 --> 00:43:09,570
+Let's try to use heatmaps then, same settings, and click bind.
+
+803
+00:43:13,580 --> 00:43:17,040
+Now it's only, now it's only assigned to this bone, hum.
+
+804
+00:43:18,620 --> 00:43:23,220
+Oh, okay, I didn't have all bones selected, I just had to select all bones, and then with
+
+805
+00:43:23,220 --> 00:43:32,710
+heatmaps, click bind, and now you see that each bone kinda deforms the upper teeth.
+
+806
+00:43:32,710 --> 00:43:38,830
+And don't worry, if we enable the controls, here's this main control that moves the whole
+
+807
+00:43:38,830 --> 00:43:39,610
+upper teeth.
+
+808
+00:43:39,850 --> 00:43:44,330
+And most of the time you won't even move these controls, you'll just open the jaw, and then
+
+809
+00:43:44,330 --> 00:43:45,910
+everything will move automatically.
+
+810
+00:43:46,370 --> 00:43:49,030
+Let's keep binding, and you'll see how it works.
+
+811
+00:43:49,530 --> 00:43:57,150
+So select the lower teeth, shift-select the armature, enable only the last layer, go to
+
+812
+00:43:57,150 --> 00:44:03,470
+pose mode, select the three teeth bones, and with these same settings, click bind.
+
+813
+00:44:05,350 --> 00:44:05,830
+Okay.
+
+814
+00:44:06,950 --> 00:44:13,530
+Now if I enable the main controls, and open the jaw, the teeth will move with the jaw.
+
+815
+00:44:13,910 --> 00:44:15,890
+And here I can kinda deform the teeth.
+
+816
+00:44:19,030 --> 00:44:20,510
+Or move the whole thing.
+
+817
+00:44:20,690 --> 00:44:25,110
+And now we only need to take care of the tongue, which we'll do in the same way, just undo.
+
+818
+00:44:26,590 --> 00:44:28,530
+Okay, I'll hide the teeth.
+
+819
+00:44:30,090 --> 00:44:37,990
+Select the tongue, shift-select the rig, pose mode, enable the deform bones, hold shift while
+
+820
+00:44:37,990 --> 00:44:43,270
+selecting all of these three tongue bones, and with the same settings, click bind.
+
+821
+00:44:44,610 --> 00:44:45,130
+Okay.
+
+822
+00:44:45,550 --> 00:44:47,650
+Now in object mode, I can unhide everything.
+
+823
+00:44:50,390 --> 00:44:54,970
+Select the rig, and enable the control bones, or control shapes.
+
+824
+00:44:55,430 --> 00:45:00,770
+Go to pose mode, and if I grab the jaw and move it, you'll see that it opens the mouth.
+
+825
+00:45:00,990 --> 00:45:05,070
+The teeth and tongue are also moving properly with the jaw.
+
+826
+00:45:06,510 --> 00:45:09,550
+If you wanna move the tongue, you can do it like this.
+
+827
+00:45:09,550 --> 00:45:14,930
+You can rotate these controls, you can also move them and stretch them, if that helps you
+
+828
+00:45:14,930 --> 00:45:17,150
+achieve the deformation that you want.
+
+829
+00:45:19,090 --> 00:45:19,970
+And that's it.
+
+830
+00:45:20,130 --> 00:45:22,570
+The mouth and jaw should be fixed now.
+
+831
+00:45:24,050 --> 00:45:25,530
+Now let's focus on the eye.
+
+832
+00:45:27,830 --> 00:45:33,330
+So it seems like the upper lid is deforming the lower lid, which is not good.
+
+833
+00:45:33,330 --> 00:45:37,970
+And also it has too much influence over the polygons above the eye.
+
+834
+00:45:38,190 --> 00:45:43,790
+So here we're going to be doing good old-fashioned weight painting, and I have a full playlist
+
+835
+00:45:43,790 --> 00:45:46,090
+about weight painting if you wanna learn the basics.
+
+836
+00:45:46,330 --> 00:45:50,210
+Here I'm going to go a little bit fast, but I'm going to tell you the most important stuff.
+
+837
+00:45:51,210 --> 00:45:55,210
+So go to object mode, and I'm going to hide the lashes again, the eyelashes.
+
+838
+00:45:55,210 --> 00:46:02,770
+Select the rig, and again unhide the deformation bones, and then shift-select the mesh, and
+
+839
+00:46:02,770 --> 00:46:04,030
+go to weight paint mode.
+
+840
+00:46:06,860 --> 00:46:07,380
+Right?
+
+841
+00:46:07,640 --> 00:46:13,000
+And you may want to click on the x-ray button here, so that you don't see the bones through
+
+842
+00:46:13,000 --> 00:46:13,380
+the mesh.
+
+843
+00:46:13,880 --> 00:46:20,980
+And now if I control-click, and now if I control-click on this bone, I should see what it affects,
+
+844
+00:46:20,980 --> 00:46:26,920
+but it looks like I have the hair selected, rather than the face.
+
+845
+00:46:27,160 --> 00:46:31,660
+So let's select the rig, shift-select the face, and then go to weight paint mode.
+
+846
+00:46:31,880 --> 00:46:37,800
+And if I control-click here, I'll see what parts of the mesh are affected by this shape.
+
+847
+00:46:38,000 --> 00:46:42,720
+And it may not be super obvious, but you'll see that there is a little influence on the
+
+848
+00:46:42,720 --> 00:46:43,400
+lower lid.
+
+849
+00:46:43,560 --> 00:46:47,360
+So let's go to tool, where you'll find the options for weight painting.
+
+850
+00:46:47,360 --> 00:46:54,340
+And here, under symmetry, I want to enable mirror vertex groups, and also the x option.
+
+851
+00:46:54,620 --> 00:46:59,180
+So that way, anything that I do on this side of the mesh will be mirrored on the other side,
+
+852
+00:46:59,260 --> 00:47:01,880
+and I don't have to manually paint both sides.
+
+853
+00:47:02,120 --> 00:47:05,500
+Next under option, I'm going to enable auto-normalize.
+
+854
+00:47:05,620 --> 00:47:08,840
+I always enable this option, and that saves me some trouble.
+
+855
+00:47:09,080 --> 00:47:13,500
+Please refer to the weight painting playlist if you want an in-depth explanation.
+
+856
+00:47:13,500 --> 00:47:19,180
+But for now, I'll set weight to zero, which means that I'll be removing weights here.
+
+857
+00:47:19,460 --> 00:47:25,520
+The strength I can keep to one, and with F, I'm going to make my brush a little bit bigger,
+
+858
+00:47:25,700 --> 00:47:32,020
+and paint on the lower lid, and make sure that all of the light blue color disappears.
+
+859
+00:47:34,180 --> 00:47:36,580
+You can also enable show zero weights.
+
+860
+00:47:38,000 --> 00:47:42,660
+And that will allow you to easily see weights that are greater than zero.
+
+861
+00:47:49,110 --> 00:47:53,950
+So for some reason, the mix mode didn't quite remove the weights fully.
+
+862
+00:47:54,110 --> 00:47:59,610
+So I'll switch to subtract mode, and set the weight to one.
+
+863
+00:47:59,790 --> 00:48:07,010
+So I'm fully subtracting the weights, and then click until the whole lower lid becomes black.
+
+864
+00:48:07,010 --> 00:48:10,830
+And then also ctrl-click on the next shape, and do the same.
+
+865
+00:48:10,950 --> 00:48:15,590
+I want to remove all influence of this bone below the upper lid.
+
+866
+00:48:16,770 --> 00:48:20,750
+Okay, this also affects a little bit too much of this, of the cheek.
+
+867
+00:48:22,330 --> 00:48:27,950
+So paint it out, similarly here.
+
+868
+00:48:30,770 --> 00:48:34,590
+Let's see the angle, and I'll keep erasing the weights.
+
+869
+00:48:36,170 --> 00:48:39,850
+Okay, let's see the bones on the lower lid.
+
+870
+00:48:40,730 --> 00:48:43,670
+So again, I don't want them to affect the upper lid at all.
+
+871
+00:48:44,410 --> 00:48:49,550
+And also, I'm going to erase the weights that go too far down.
+
+872
+00:48:53,720 --> 00:48:54,960
+Okay, something like this.
+
+873
+00:48:55,120 --> 00:48:58,560
+And then again, I'll go through the bones on the upper lid.
+
+874
+00:48:58,560 --> 00:49:07,380
+And I'm going to reduce the strength of the subtraction, and I want to remove the influence
+
+875
+00:49:07,760 --> 00:49:10,160
+of this bone over the brow, basically.
+
+876
+00:49:10,920 --> 00:49:13,020
+Okay, same with this bone.
+
+877
+00:49:14,460 --> 00:49:21,700
+Reduce the strength, and try to erase the weights, so that it only affects this part of
+
+878
+00:49:21,700 --> 00:49:22,460
+the upper lid.
+
+879
+00:49:25,900 --> 00:49:29,060
+Okay, so I think this may be starting to work now.
+
+880
+00:49:29,360 --> 00:49:36,600
+So let's go to object mode, select the rig, unhide the controls, go to pause mode, and
+
+881
+00:49:36,600 --> 00:49:37,520
+try to close the eye.
+
+882
+00:49:37,940 --> 00:49:39,580
+And you'll see that it's much better.
+
+883
+00:49:39,740 --> 00:49:42,300
+It doesn't affect the lower lid.
+
+884
+00:49:42,520 --> 00:49:47,460
+But it looks like the central bone is affecting the sides too much.
+
+885
+00:49:47,460 --> 00:49:53,440
+So let's close the eye, shift select the mesh, and go to weight paint mode again.
+
+886
+00:49:54,400 --> 00:49:57,060
+Control click on this central bone.
+
+887
+00:49:58,260 --> 00:50:00,480
+And I'm still in subtract mode.
+
+888
+00:50:00,640 --> 00:50:05,260
+So I'll try to subtract some of these weights from the sides.
+
+889
+00:50:06,780 --> 00:50:13,960
+And also subtract the weights that the edge of the eye has on these eyelids.
+
+890
+00:50:37,290 --> 00:50:42,870
+And now I'll switch back to mix, and with these same settings, weight to 1 and strength
+
+891
+00:50:42,870 --> 00:50:50,530
+to something low, I'm going to try to click in this area to make these vertices more affected
+
+892
+00:50:50,530 --> 00:50:51,170
+by this bone.
+
+893
+00:50:56,500 --> 00:51:00,600
+So it's almost there, I just don't really like the outer edge of the eye.
+
+894
+00:51:01,200 --> 00:51:11,980
+So again, select the rig, shift select the mesh, weight paint mode, and I guess this bone
+
+895
+00:51:11,980 --> 00:51:15,520
+shouldn't be affecting the upper lid that much.
+
+896
+00:51:15,520 --> 00:51:21,840
+So let's go back to subtract mode, and subtract these weights.
+
+897
+00:51:22,420 --> 00:51:24,500
+Also it goes too far into the temples.
+
+898
+00:51:26,620 --> 00:51:30,940
+So now I can control click on this control and try to close the eye again.
+
+899
+00:51:34,530 --> 00:51:40,430
+Let's try to paint some weights for this central bone over here on the side of the lid.
+
+900
+00:51:41,370 --> 00:51:46,490
+So mix mode, low strength, and I'll paint just a little bit.
+
+901
+00:51:50,120 --> 00:51:55,740
+Okay, so the solution was actually to paint some weights for the edge of the eye on the
+
+902
+00:51:55,740 --> 00:51:56,760
+side of the eyelid.
+
+903
+00:51:57,460 --> 00:52:03,180
+I'll go back to object mode, and now my eye is closing reasonably well.
+
+904
+00:52:03,440 --> 00:52:08,100
+You can keep painting the weights, this process can be very time consuming, but you can get
+
+905
+00:52:08,100 --> 00:52:09,000
+even better results.
+
+906
+00:52:11,720 --> 00:52:13,820
+Another tool that you can use is the blur tool.
+
+907
+00:52:17,360 --> 00:52:19,640
+And I'm going to call this one done for now.
+
+908
+00:52:24,480 --> 00:52:27,740
+So another problem area that you may encounter are the eyelashes.
+
+909
+00:52:28,340 --> 00:52:30,300
+I'm going to press Alt H to unhide them.
+
+910
+00:52:31,840 --> 00:52:32,600
+Here they are.
+
+911
+00:52:35,700 --> 00:52:39,140
+And now if I close, you'll see that they don't really follow the eyelids.
+
+912
+00:52:39,380 --> 00:52:44,940
+So here is a very powerful technique that you can use, not only for eyelashes, but
+
+913
+00:52:44,940 --> 00:52:46,160
+it will help in this case.
+
+914
+00:52:47,540 --> 00:52:50,700
+I'm going to delete all groups for these eyelashes.
+
+915
+00:52:51,420 --> 00:52:58,520
+I want to set the weights anew, and I'll go to the modifiers and add a data transfer modifier.
+
+916
+00:52:59,360 --> 00:53:02,220
+I'll move it above the armature modifier.
+
+917
+00:53:02,560 --> 00:53:07,700
+And then as a source, I'm going to use the picker and choose the body or the face mesh.
+
+918
+00:53:07,700 --> 00:53:13,880
+Then I'm going to enable vertex data, and in the options, vertex groups.
+
+919
+00:53:14,260 --> 00:53:17,200
+And then press the generate data layers button.
+
+920
+00:53:17,600 --> 00:53:23,260
+So now if I go back to the data properties, you'll see that we have the vertex groups again.
+
+921
+00:53:24,440 --> 00:53:30,600
+But now if I go to my rig and go to pose mode and move the eyelid a little bit, you'll see
+
+922
+00:53:30,600 --> 00:53:34,540
+that now the eyelash is trying to move with the eyelid, but not quite.
+
+923
+00:53:34,860 --> 00:53:38,520
+So that is because this modifier is live.
+
+924
+00:53:38,520 --> 00:53:43,900
+So as I'm moving the control, this modifier is being updated.
+
+925
+00:53:44,240 --> 00:53:46,620
+To avoid that, I want to apply the modifier.
+
+926
+00:53:46,820 --> 00:53:49,160
+So click this triangle and choose apply.
+
+927
+00:53:50,260 --> 00:53:56,540
+Now if I go to the rig and move the eyelid, you'll see that the behavior is different.
+
+928
+00:53:57,180 --> 00:53:58,340
+It's still not perfect.
+
+929
+00:53:58,340 --> 00:54:04,060
+That is because the transfer didn't quite propagate to the end of the eyelid.
+
+930
+00:54:04,060 --> 00:54:05,740
+I'm going to enable bioframe.
+
+931
+00:54:06,320 --> 00:54:08,800
+So the eyelash mesh is kind of big.
+
+932
+00:54:09,360 --> 00:54:11,900
+Here is its end actually, over here.
+
+933
+00:54:12,060 --> 00:54:16,400
+And so now we're going to have to do a little bit of additional weight painting.
+
+934
+00:54:16,740 --> 00:54:19,440
+So select the rig, shift select the eyelash.
+
+935
+00:54:19,760 --> 00:54:25,660
+And actually, I'll go to edit mode and press L, and then L one more time on the other side
+
+936
+00:54:25,660 --> 00:54:27,040
+to select the upper eyelashes.
+
+937
+00:54:27,400 --> 00:54:29,980
+Press P and separate them into a separate object.
+
+938
+00:54:30,220 --> 00:54:32,540
+So this is again the power of Blender.
+
+939
+00:54:32,540 --> 00:54:37,760
+It allows us to separate and join objects, and the weights just stay together.
+
+940
+00:54:39,680 --> 00:54:44,680
+By separating these meshes, I don't have to worry that I'll be painting on the lower
+
+941
+00:54:44,680 --> 00:54:47,900
+eyelash, and I can just focus on the upper one.
+
+942
+00:54:48,120 --> 00:54:54,300
+So select the rig, shift select the eyelash, weight paint mode, and now I'm going to control
+
+943
+00:54:54,300 --> 00:54:59,740
+click on this here, which is the control of the upper eyelid.
+
+944
+00:55:01,040 --> 00:55:03,760
+And I can try to blur, I guess, a little bit.
+
+945
+00:55:04,560 --> 00:55:06,360
+But yeah, I'll have to paint.
+
+946
+00:55:06,960 --> 00:55:10,220
+So blend mix, weight to 1, and strength to something low.
+
+947
+00:55:10,500 --> 00:55:14,960
+And I'm going to paint at the top of the eyelash.
+
+948
+00:55:14,960 --> 00:55:23,580
+Okay, then select this control here, and paint some weights, and this control, and paint some
+
+949
+00:55:23,580 --> 00:55:24,340
+weights over here.
+
+950
+00:55:25,400 --> 00:55:33,380
+And then maybe the edge, and paint some weights, and then I'll blur a little bit, but not too
+
+951
+00:55:33,380 --> 00:55:33,620
+much.
+
+952
+00:55:35,780 --> 00:55:39,640
+So I guess I have to paint a little bit more here at the top.
+
+953
+00:55:46,350 --> 00:55:49,890
+Okay, and now we're getting something that is working.
+
+954
+00:55:51,450 --> 00:55:54,410
+I can both go back to the rig and test the behavior.
+
+955
+00:55:55,470 --> 00:55:58,010
+And yeah, I can work with that.
+
+956
+00:55:58,390 --> 00:56:00,470
+With more painting, it can get even better.
+
+957
+00:56:00,690 --> 00:56:01,710
+It just takes time.
+
+958
+00:56:01,870 --> 00:56:03,950
+So take your time with the weight painting.
+
+959
+00:56:05,610 --> 00:56:10,390
+And in the end, maybe, let's maybe fix this problem here.
+
+960
+00:56:10,570 --> 00:56:13,590
+So just create this pose where the problem is visible.
+
+961
+00:56:14,230 --> 00:56:20,470
+Go to object mode, shift select the mesh, go to weight paint mode, and control click
+
+962
+00:56:22,350 --> 00:56:23,970
+on a deforming bone.
+
+963
+00:56:24,950 --> 00:56:28,470
+So if I enable x-ray here, I can see the bones better.
+
+964
+00:56:28,610 --> 00:56:31,750
+I want to select the lower leg bone.
+
+965
+00:56:33,950 --> 00:56:39,510
+And then if I disable overlays, and just use the blur brush and blur a little bit,
+
+966
+00:56:40,410 --> 00:56:44,250
+you'll see that we basically fix the problem with just a little bit of blurring.
+
+967
+00:56:45,590 --> 00:56:50,050
+And if we move around, we may find additional problems.
+
+968
+00:56:50,410 --> 00:56:56,330
+And you can keep blurring or try a little bit of painting, and it should become perfect.
+
+969
+00:56:58,150 --> 00:57:02,230
+So I hope you enjoyed this full workflow with AutoRig Pro.
+
+970
+00:57:02,530 --> 00:57:05,930
+We did spend some time on fixing weight painting issues.
+
+971
+00:57:05,930 --> 00:57:12,810
+This is very normal, AutoRig Pro does help a lot, but some manual work is unavoidable.
+
+972
+00:57:13,230 --> 00:57:18,750
+And I wanted to make sure that you'll have all of the necessary tools to rig your first character
+
+973
+00:57:18,750 --> 00:57:20,010
+with AutoRig Pro.
+
